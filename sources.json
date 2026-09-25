@@ -1,0 +1,112 @@
+[
+  {
+    "sourceId": "nist-it",
+    "sourceName": "NIST \u2014 Information Technology",
+    "publisherId": "nist",
+    "category": "technology_ai",
+    "url": "https://www.nist.gov/news-events/information%20technology/rss.xml",
+    "refreshSeconds": 21600,
+    "rightsUrl": "https://www.nist.gov/copyrights-disclaimers",
+    "attribution": "NIST \u2014 Information Technology",
+    "enabled": true
+  },
+  {
+    "sourceId": "nasa",
+    "sourceName": "NASA",
+    "publisherId": "nasa",
+    "category": "science_innovation",
+    "url": "https://www.nasa.gov/feed/",
+    "refreshSeconds": 21600,
+    "rightsUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+    "attribution": "NASA",
+    "enabled": true
+  },
+  {
+    "sourceId": "fed",
+    "sourceName": "Federal Reserve Board",
+    "publisherId": "fed",
+    "category": "business_economy",
+    "url": "https://www.federalreserve.gov/feeds/press_all.xml",
+    "refreshSeconds": 21600,
+    "rightsUrl": "https://www.federalreserve.gov/disclaimer.htm",
+    "attribution": "Federal Reserve Board",
+    "enabled": true
+  },
+  {
+    "sourceId": "bls",
+    "sourceName": "Bureau of Labor Statistics \u2014 Latest Numbers",
+    "publisherId": "bls",
+    "category": "productivity_work",
+    "url": "https://www.bls.gov/feed/bls_latest.rss",
+    "refreshSeconds": 21600,
+    "rightsUrl": "https://www.bls.gov/bls/linksite.htm",
+    "attribution": "Bureau of Labor Statistics \u2014 Latest Numbers",
+    "enabled": true
+  },
+  {
+    "sourceId": "uk-dfe",
+    "sourceName": "UK Department for Education",
+    "publisherId": "uk-dfe",
+    "category": "education_learning",
+    "url": "https://www.gov.uk/government/organisations/department-for-education.atom",
+    "refreshSeconds": 21600,
+    "rightsUrl": "https://www.gov.uk/help/terms-conditions",
+    "attribution": "UK Department for Education \u2014 Contains public sector information licensed under the Open Government Licence v3.0.",
+    "enabled": true
+  },
+  {
+    "sourceId": "uk-dsit",
+    "sourceName": "UK Department for Science, Innovation and Technology",
+    "publisherId": "uk-dsit",
+    "category": "technology_ai",
+    "url": "https://www.gov.uk/government/organisations/department-for-science-innovation-and-technology.atom",
+    "refreshSeconds": 21600,
+    "rightsUrl": "https://www.gov.uk/help/terms-conditions",
+    "attribution": "UK Department for Science, Innovation and Technology \u2014 Contains public sector information licensed under the Open Government Licence v3.0.",
+    "enabled": true
+  },
+  {
+    "sourceId": "uk-dbt",
+    "sourceName": "UK Department for Business and Trade",
+    "publisherId": "uk-dbt",
+    "category": "business_economy",
+    "url": "https://www.gov.uk/government/organisations/department-for-business-and-trade.atom",
+    "refreshSeconds": 21600,
+    "rightsUrl": "https://www.gov.uk/help/terms-conditions",
+    "attribution": "UK Department for Business and Trade \u2014 Contains public sector information licensed under the Open Government Licence v3.0.",
+    "enabled": true
+  },
+  {
+    "sourceId": "uk-gds",
+    "sourceName": "UK Government Digital Service",
+    "publisherId": "uk-gds",
+    "category": "productivity_work",
+    "url": "https://www.gov.uk/government/organisations/government-digital-service.atom",
+    "refreshSeconds": 43200,
+    "rightsUrl": "https://www.gov.uk/help/terms-conditions",
+    "attribution": "UK Government Digital Service \u2014 Contains public sector information licensed under the Open Government Licence v3.0.",
+    "enabled": true
+  },
+  {
+    "sourceId": "nist-cyber-blog",
+    "sourceName": "NIST Cybersecurity Insights",
+    "publisherId": "nist",
+    "category": "cybersecurity",
+    "url": "https://www.nist.gov/blogs/cybersecurity-insights/rss.xml",
+    "refreshSeconds": 21600,
+    "rightsUrl": "https://www.nist.gov/copyrights-disclaimers",
+    "attribution": "NIST Cybersecurity Insights",
+    "enabled": true
+  },
+  {
+    "sourceId": "uk-ofsted",
+    "sourceName": "Ofsted",
+    "publisherId": "uk-ofsted",
+    "category": "education_learning",
+    "url": "https://www.gov.uk/government/organisations/ofsted.atom",
+    "refreshSeconds": 43200,
+    "rightsUrl": "https://www.gov.uk/help/terms-conditions",
+    "attribution": "Ofsted \u2014 Contains public sector information licensed under the Open Government Licence v3.0.",
+    "enabled": true
+  }
+]

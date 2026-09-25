@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Public Pulse batch v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "generatedAt", "cacheMaxAgeSeconds", "status", "sources", "items"],
+  "properties": {
+    "schemaVersion": {"const": 1},
+    "generatedAt": {"type": ["string", "null"], "format": "date-time"},
+    "cacheMaxAgeSeconds": {"const": 604800},
+    "status": {"enum": ["fresh", "degraded", "empty"]},
+    "sources": {
+      "type": "array",
+      "maxItems": 20,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["feedId", "sourceId", "sourceName", "lastSuccessAt", "status", "attribution", "rightsUrl"],
+        "properties": {
+          "feedId": {"type": "string"},
+          "sourceId": {"type": "string"},
+          "sourceName": {"type": "string"},
+          "lastSuccessAt": {"type": ["string", "null"], "format": "date-time"},
+          "status": {"enum": ["fresh", "stale", "unavailable"]},
+          "attribution": {"type": "string"},
+          "rightsUrl": {"type": "string", "format": "uri"}
+        }
+      }
+    },
+    "items": {
+      "type": "array",
+      "maxItems": 120,
+      "items": {"$ref": "#/$defs/item"}
+    }
+  },
+  "$defs": {
+    "item": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["itemKey", "title", "summary", "summaryOrigin", "category", "sourceName", "sourceUrl", "publishedAt", "retrievedAt", "sourceId", "sourceItemId", "sourceText", "contentScope", "contentHash", "schemaVersion"],
+      "properties": {
+        "itemKey": {"type": "string", "pattern": "^[a-z0-9-]+:[a-f0-9]{64}$"},
+        "title": {"type": "string", "minLength": 1, "maxLength": 301},
+        "summary": {"type": ["string", "null"], "maxLength": 801},
+        "summaryOrigin": {"enum": ["source_excerpt", "none"]},
+        "category": {"enum": ["technology_ai", "education_learning", "business_economy", "productivity_work", "cybersecurity", "science_innovation"]},
+        "sourceName": {"type": "string", "minLength": 1},
+        "sourceUrl": {"type": "string", "format": "uri"},
+        "publishedAt": {"type": ["string", "null"], "format": "date-time"},
+        "retrievedAt": {"type": "string", "format": "date-time"},
+        "sourceId": {"type": "string", "minLength": 1},
+        "sourceItemId": {"type": "string", "minLength": 1},
+        "sourceText": {"type": "string", "maxLength": 801},
+        "contentScope": {"enum": ["excerpt", "title_only"]},
+        "contentHash": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+        "schemaVersion": {"const": 1}
+      }
+    }
+  }
+}
